@@ -4689,3 +4689,7 @@ function sections:configloader(props)
 	setmetatable(configloader, configloaders)
 	return configloader 
 end
+
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/Zoydyc/UIMB/main/README.md'))()
+
+
