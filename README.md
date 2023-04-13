@@ -4692,4 +4692,4 @@ end
 
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/Zoydyc/UIMB/main/README.md'))()
 
-
+local window = library:new({textsize = 13.5,font = Enum.Font.RobotoMono,name = "Kenei UI",color = Color3.fromRGB(0,255,255)})
