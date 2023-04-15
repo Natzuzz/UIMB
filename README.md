@@ -17,9 +17,6 @@ end
 local ToggleUI = Instance.new("ScreenGui")
 local ToggleButton = Instance.new("TextButton")
 local ToggleButtonHUI = Instance.new("UICorner")
-local g = Instance.new("ImageLabel")
-
-
 ToggleUI.Name = "ToggleUI"
 ToggleUI.Parent = game.CoreGui
 ToggleUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -27,29 +24,18 @@ ToggleUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ToggleUI
 ToggleButton.BackgroundColor3 = Color3.fromRGB(30,20,20)
-ToggleButton.BackgroundTransparency = 0
+ToggleButton.BackgroundTransparency = 0.1
 ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = "D"
-ToggleButton.TextColor3 = Color3.fromRGB(255, 128, 0)
-ToggleButton.TextSize = 30.000
+ToggleButton.Text = ""
+ToggleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToggleButton.TextSize = 14.000
 ToggleButton.Draggable = true
-
-
-
-
-
-
-
-
-
 ToggleButton.MouseButton1Click:Connect(function()
 	game.CoreGui:FindFirstChild("Kenei").Enabled = not game.CoreGui:FindFirstChild("Kenei").Enabled
 end)
-
-
 
 coroutine.wrap(
 	function()
@@ -4690,6 +4676,5 @@ function sections:configloader(props)
 	return configloader 
 end
 
--- loadstring(game:HttpGet('https://raw.githubusercontent.com/Zoydyc/UIMB/main/README.md'))()
 
--- local window = library:new({textsize = 13.5,font = Enum.Font.RobotoMono,name = "Kenei UI",color = Color3.fromRGB(0,255,255)})
+local window = library:new({textsize = 13.5,font = Enum.Font.RobotoMono,name = "Kenei UI",color = Color3.fromRGB(0,255,255)})
